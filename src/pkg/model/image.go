@@ -3,11 +3,10 @@ package model
 import "time"
 
 type Image struct {
-	ID           string
-	RepoTags     []string
-	Architecture string
-	Created      time.Time
-	OS           string
-	Size         int64
-	Labels       map[string]string
+	ID         string
+	Names      []string
+	Labels     map[string]string
+	Containers int8
+	Size       int64
+	CreatedAt  time.Time
 }
